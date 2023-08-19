@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Change Example</title>
+  <link rel="stylesheet" href="home.css">
+  <!-- Include Firebase SDK scripts -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <!-- Initialize Firebase and define functions -->
+  <script>
+   
+   const firebaseConfig = {
+  apiKey: "AIzaSyCFVMygEQFQxwfeyFpPWcBQf0f8jssdcZQ",
+  authDomain: "hacth-b2534.firebaseapp.com",
+  databaseURL: "https://hacth-b2534-default-rtdb.firebaseio.com",
+  projectId: "hacth-b2534",
+  storageBucket: "hacth-b2534.appspot.com",
+  messagingSenderId: "697983175086",
+  appId: "1:697983175086:web:a67011eb3189e36b8ae03f",
+  measurementId: "G-25HCZY3WD6"
+};
+    
+    // Initialize Firebase with your config
+    firebase.initializeApp(firebaseConfig);
+
+    // Change Password function
+    function changePassword() {
+      const user = firebase.auth().currentUser;
+      if (user) {
+        const newPassword = document.getElementById("new-password").value;
+
+        user.updatePassword(newPassword)
+          .then(() => {
+            console.log("Password changed successfully!");
+            // Show popup notification
+            alert("Password changed successfully!");
+            
+            // Clear input boxes
+            document.getElementById("old-password").value = "";
+            document.getElementById("new-password").value = "";
+          })
+          .catch((error) => {
+            console.error(error.message);
+          });
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="profile">
+    <img src="img.png" alt="My Logo" class="img2">
+    <input type="password" id="old-password" placeholder="Old Password">
+    <input type="password" id="new-password" placeholder="New Password">
+    <button class="updatePassword" onclick="changePassword()">Update Password</button>
+  </div>
+</body>
+</html>

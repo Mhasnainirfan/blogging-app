@@ -1,0 +1,178 @@
+body {
+ 
+  background-size: cover;
+ background-repeat: no-repeat;
+     font-family: generic sans-serif ;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+   }
+   
+   .container {
+     background-size: 100px;
+     background-repeat: no-repeat;
+     background-position: top;
+       width: 350px;
+       border: 1px solid #ccc;
+       position: fixed;
+       border-radius: 2px;
+       padding: 46px;
+       height: 30vh;
+       box-shadow: 3px 3px 3px 3px rgba(119, 41, 41, 0.1);
+  
+   }
+  
+   h1{
+     color: rgb(0, 0, 0);
+     font-size: 40px;
+     position: relative;
+     bottom: 1px;
+     left: 90px;
+   }
+ 
+ 
+ #signin-email {
+   border: 2px solid rgb(190, 187, 187);
+   margin-left: 53px;
+   padding: 8px;
+   font-size: 18px;
+   text-align: center;
+ }
+
+ #signin-password{
+   margin-top : 25px;
+   border: 2px solid rgb(190, 187, 187);
+  margin-left: 53px;
+   padding: 8px;
+   font-size: 18px;
+   text-align: center;
+ }
+ 
+ .button1{
+   background-color:#3e0db1;
+   color: #fff;
+   border:none;
+   border-radius:10px;
+     padding: 12px;
+     padding-left: 20px;
+     font-size: 15px;
+     font-weight: bold;
+     width: 100px;
+     margin-top: 20px;
+     margin-left: 120px;
+     transition: color 0.3s ease;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+ }
+ .button2{
+  background-color:#3e0db1;
+  color: #fff;
+  border:none;
+  border-radius:10px;
+    padding: 12px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 110px;
+    transition: color 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+ 
+ .button1:hover{
+   color: rgb(58, 58, 59); 
+ }
+ .form-link{
+   border: 8px solid rgb(214, 210, 210);
+   padding: 10px;
+   background-color: white;
+   border-radius:10px;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size:12px;
+   font-weight:bold; 
+   width: 250px;
+   margin-top: 10px;
+   color: rgb(226, 152, 152);
+   margin-left: 30px;
+  
+   
+ }
+ .tro{
+  margin-bottom: 600px;
+  font-size: 50px;
+  margin-left: 520px;
+  position: absolute;
+ }
+ .tros{
+  margin-bottom: 600px;
+  font-size: 50px;
+  margin-left: 500px;
+  position: absolute;
+ }
+ 
+ 
+ .link{
+   position: relative;
+   bottom: 52px;
+   left: 200px;
+   border:lavenderblush;
+   border-radius: 10px;
+ color: rgb(202, 24, 24);
+   font-size: 20px;
+   font-weight: bold;
+   width: 60px;
+   padding: 10px;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ 
+ .link:hover{
+   color: rgb(115, 255, 0); 
+ }
+ #signup-email {
+  margin-top: 20px;
+   border: 2px solid rgb(190, 187, 187);
+   border-radius: 10px;
+   padding: 6px;
+   font-size: 20px;
+  text-align: center;
+  margin-left: 30px;
+ }
+ #signup-password{
+   margin-top : 20px;
+   border: 2px solid rgb(190, 187, 187);
+   border-radius: 10px;
+   padding: 6px;
+   font-size: 20px;
+   text-align: center;
+   margin-left: 30px;
+ }
+ #firstname{
+   margin-top : 20px;
+   border: 2px solid rgb(190, 187, 187);
+   border-radius: 10px;
+   padding: 6px;
+   font-size: 20px;
+   text-align: center;
+   margin-left: 30px;
+ }
+ .container2 {
+   background-image: url(thread-removebg-preview.png);
+   background-size: 100px;
+   background-repeat: no-repeat;
+   background-position: top;
+     width: 320px;
+     border: 3px solid #149423;
+     border-radius: 1px;
+     padding: 46px;
+     height: 50vh;
+     position: fixed;
+     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+ 
+ }
